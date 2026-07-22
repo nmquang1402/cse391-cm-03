@@ -1,0 +1,72 @@
+*, *::before, *::after {box-sizing: border-box;}
+
+:root {
+    --cm-primary: #0f766e;
+    -cm-bg: #f8fafc;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--cm-bg);
+    color: #1f2937; 
+}
+
+.cm-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.cm-table thead {
+    background: var(--cm-primary);
+    color: white;
+}
+
+.cm-header {
+    background: var(--cm-primary);
+    color: white;
+    padding: 1rem;
+}
+
+.cm-nav a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.cm-nav a:hover {
+    text-decoration: underline;
+}
+
+.cm-table tbody tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+.cm-table tbody tr:hover {
+    background: #ccfbf1;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.25rem;
+}
+
+:focus {
+    outline: 2px solid var(--cm-primary);
+}
+
+button {
+    background: var(--cm-primary);
+    color: white;
+}
+
+button:hover {
+    background: #0d9488;
+}
